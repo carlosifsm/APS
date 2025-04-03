@@ -11,6 +11,8 @@ public class ControleRemoto {
     private Map<String, ICommand> comandos = new HashMap<String, ICommand>();
     private Stack<ICommand> hist = new Stack<ICommand>();
 
+    // Objetos que vão sofrer os efeitos dos comandos.
+    // A estrutura permite inserção de novos dispositivos e novos comandos graças à parametrização 
     private TV tv = new TV();
     private Luz luz = new Luz();
 
