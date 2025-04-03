@@ -1,5 +1,9 @@
 package model;
 
+import model.interfaces.ILigavel;
+
+//Classe Reciever
+// Implementações genéricas
 public class Luz implements ILigavel{
 
     @Override

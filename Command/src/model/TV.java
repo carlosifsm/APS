@@ -1,8 +1,12 @@
 package model;
 
-public class TV implements IVolume, ILigavel, ICanal {
+import model.interfaces.ILigavel;
+import model.interfaces.IVolume;
+
+// Classe Recivier
+// Implementações genéricas
+public class TV implements IVolume, ILigavel {
     private int volume = 0;
-    private int canal = 0;
 
     @Override
     public void ligar() {
@@ -26,12 +30,6 @@ public class TV implements IVolume, ILigavel, ICanal {
         if(volume > 0)
             volume--;
         System.out.println("Volume TV: "+ volume );
-    }
-
-    @Override
-    public void mudarCanal(int c) {
-        canal = c;
-        System.out.println("Canal TV: "+ canal );
     }
 
 }
