@@ -2,7 +2,7 @@
 // Flyweight
 class Torcedor {
 
-    // Esatos compartilhados
+    // Estados compartilhados
     private final String roupa;
     private final String corTime;
     private final String gesto;
